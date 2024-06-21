@@ -1,0 +1,8 @@
+# Ignore Visual Studio Code workspace settings and extensions
+.vscode/
+.vscode/*
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
