@@ -33,9 +33,9 @@ void runTests() {
     }
 
     // Save and load library state
-    library.saveLibraryState("library_state.json");
+    library.saveLibraryState("books.json", "users.json");
     Library newLibrary;
-    newLibrary.loadLibraryState("library_state.json");
+    newLibrary.loadLibraryState("books.json", "users.json");
 
     // Verify loaded data
     auto loadedBooks = newLibrary.listAllBooks();

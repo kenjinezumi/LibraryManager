@@ -60,52 +60,76 @@ std::vector<Book> Library::listAllBooks() const {
     return books.inorder();
 }
 
-void Library::loadLibraryState(const std::string& filename) {
-    std::ifstream file(filename);
-    if (!file.is_open()) {
-        throw LibraryException("Could not open file for loading library state.");
+void Library::loadLibraryState(const std::string& booksFilename, const std::string& usersFilename) {
+    std::ifstream booksFile(booksFilename);
+    if (!booksFile.is_open()) {
+        throw LibraryException("Could not open file for loading books.");
     }
 
-    nlohmann::json j;
-    file >> j;
+    nlohmann::json booksJson;
+    booksFile >> booksJson;
 
-    for (const auto& item : j["books"]) {
-        Book book = item.get<Book>();
+    for (const auto& item : booksJson["books"]) {
+        Book book;
+        book.id = item.at("id").get<int>();
+        book.title = item.at("title").get<std::string>();
+        book.author = item.at("author").get<std::string>();
+        book.genre = item.at("genre").get<std::string>();
+        book.isLoaned = item.at("isLoaned").get<bool>();
+        book.dueDate = item.at("dueDate").get<std::string>();
         books.insert(book);
     }
 
-    for (const auto& item : j["users"]) {
-        User user = item.get<User>();
-        users[user.id] = user;
+    std::ifstream usersFile(usersFilename);
+    if (!usersFile.is_open()) {
+        throw LibraryException("Could not open file for loading users.");
     }
 
-    for (const auto& item : j["loans"].items()) {
-        int bookId = std::stoi(item.key());
-        int userId = item.value();
-        loans[bookId] = userId;
+    nlohmann::json usersJson;
+    usersFile >> usersJson;
+
+    for (const auto& item : usersJson["users"]) {
+        User user;
+        user.id = item.at("id").get<int>();
+        user.name = item.at("name").get<std::string>();
+        users[user.id] = user;
     }
 }
 
-void Library::saveLibraryState(const std::string& filename) const {
-    nlohmann::json j;
+void Library::saveLibraryState(const std::string& booksFilename, const std::string& usersFilename) const {
+    nlohmann::json booksJson;
 
     for (const auto& book : books.inorder()) {
-        j["books"].push_back(book);
+        nlohmann::json bookJson;
+        bookJson["id"] = book.id;
+        bookJson["title"] = book.title;
+        bookJson["author"] = book.author;
+        bookJson["genre"] = book.genre;
+        bookJson["isLoaned"] = book.isLoaned;
+        bookJson["dueDate"] = book.dueDate;
+        booksJson["books"].push_back(bookJson);
     }
+
+    std::ofstream booksFile(booksFilename);
+    if (!booksFile.is_open()) {
+        throw LibraryException("Could not open file for saving books.");
+    }
+    booksFile << booksJson.dump(4);
+
+    nlohmann::json usersJson;
 
     for (const auto& [id, user] : users) {
-        j["users"].push_back(user);
+        nlohmann::json userJson;
+        userJson["id"] = user.id;
+        userJson["name"] = user.name;
+        usersJson["users"].push_back(userJson);
     }
 
-    for (const auto& [bookId, userId] : loans) {
-        j["loans"][std::to_string(bookId)] = userId;
+    std::ofstream usersFile(usersFilename);
+    if (!usersFile.is_open()) {
+        throw LibraryException("Could not open file for saving users.");
     }
-
-    std::ofstream file(filename);
-    if (!file.is_open()) {
-        throw LibraryException("Could not open file for saving library state.");
-    }
-    file << j.dump(4);
+    usersFile << usersJson.dump(4);
 }
 
 void Library::loadUsersFromFile(const std::string& filename) {
@@ -117,8 +141,10 @@ void Library::loadUsersFromFile(const std::string& filename) {
     nlohmann::json j;
     file >> j;
 
-    for (const auto& item : j) {
-        User user = item.get<User>();
+    for (const auto& item : j["users"]) {
+        User user;
+        user.id = item.at("id").get<int>();
+        user.name = item.at("name").get<std::string>();
         users[user.id] = user;
     }
 }
@@ -127,7 +153,10 @@ void Library::saveUsersToFile(const std::string& filename) const {
     nlohmann::json j;
 
     for (const auto& [id, user] : users) {
-        j.push_back(user);
+        nlohmann::json userJson;
+        userJson["id"] = user.id;
+        userJson["name"] = user.name;
+        j["users"].push_back(userJson);
     }
 
     std::ofstream file(filename);

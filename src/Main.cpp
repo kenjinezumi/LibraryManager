@@ -5,19 +5,39 @@
 #include "Logger.h"
 
 void loadBooksFromFile(Library& library, const std::string& filename) {
-    library.loadLibraryState(filename);
+    try {
+        library.loadLibraryState(filename, "../data/books.json");
+    } catch (const LibraryException& e) {
+        std::cerr << "Error loading books from file '" << filename << "': " << e.what() << std::endl;
+        throw;
+    }
 }
 
 void saveBooksToFile(const Library& library, const std::string& filename) {
-    library.saveLibraryState(filename);
+    try {
+        library.saveLibraryState(filename, "../data/books.json");
+    } catch (const LibraryException& e) {
+        std::cerr << "Error saving books to file '" << filename << "': " << e.what() << std::endl;
+        throw;
+    }
 }
 
 void loadUsersFromFile(Library& library, const std::string& filename) {
-    library.loadUsersFromFile(filename);
+    try {
+        library.loadUsersFromFile(filename);
+    } catch (const LibraryException& e) {
+        std::cerr << "Error loading users from file '" << filename << "': " << e.what() << std::endl;
+        throw;
+    }
 }
 
 void saveUsersToFile(const Library& library, const std::string& filename) {
-    library.saveUsersToFile(filename);
+    try {
+        library.saveUsersToFile(filename);
+    } catch (const LibraryException& e) {
+        std::cerr << "Error saving users to file '" << filename << "': " << e.what() << std::endl;
+        throw;
+    }
 }
 
 int main(int argc, char* argv[]) {
@@ -29,8 +49,13 @@ int main(int argc, char* argv[]) {
     Library library;
 
     // Automatically load state from files
-    loadBooksFromFile(library, "../data/books.json");
-    loadUsersFromFile(library, "../data/users.json");
+    try {
+        loadBooksFromFile(library, "../data/books.json");
+        loadUsersFromFile(library, "../data/users.json");
+    } catch (const LibraryException&) {
+        // Already logged in loadBooksFromFile and loadUsersFromFile
+        return 1;
+    }
 
     std::string command = argv[1];
 
@@ -66,7 +91,7 @@ int main(int argc, char* argv[]) {
         } else if (command == "listallbooks") {
             auto books = library.listAllBooks();
             for (const auto& book : books) {
-                std::cout << "ID=" << book.id << ", Title=" << book.title << ", Author=" << book.author << ", Genre=" << book.genre << std::endl;
+                std::cout << "ID=" << book.id << ", Title=" << book.title << ", Author=" << book.author << ", Genre=" << book.genre << ", Loaned=" << (book.isLoaned ? "Yes" : "No") << ", Due Date=" << book.dueDate << std::endl;
             }
         } else {
             std::cerr << "Unknown command: " << command << std::endl;
@@ -78,8 +103,13 @@ int main(int argc, char* argv[]) {
     }
 
     // Automatically save state to files
-    saveBooksToFile(library, "../data/books.json");
-    saveUsersToFile(library, "../data/users.json");
+    try {
+        saveBooksToFile(library, "../data/books.json");
+        saveUsersToFile(library, "../data/users.json");
+    } catch (const LibraryException&) {
+        // Already logged in saveBooksToFile and saveUsersToFile
+        return 1;
+    }
 
     return 0;
 }
