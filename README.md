@@ -38,7 +38,7 @@ LibraryManager is a simple library management system that allows you to manage b
 
 ## Usage
 
-Run the compiled `LibraryManager` executable with various commands:
+Run the compiled `LibraryManager` executable with various commands (run it from the build folder):
 
 ### Commands
 
