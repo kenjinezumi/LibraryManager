@@ -2,10 +2,10 @@
     "books": [
         {
             "author": "Harper Lee",
-            "dueDate": "",
+            "dueDate": "2024-07-01",
             "genre": "Fiction",
             "id": 1,
-            "isLoaned": false,
+            "isLoaned": true,
             "title": "To Kill a Mockingbird"
         },
         {
@@ -801,5 +801,10 @@
             "title": "The Plague"
         }
     ],
-    "users": null
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe"
+        }
+    ]
 }
