@@ -1,104 +1,805 @@
 {
     "books": [
-        { "id": 1, "title": "To Kill a Mockingbird", "author": "Harper Lee", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 2, "title": "1984", "author": "George Orwell", "genre": "Dystopian", "isLoaned": false, "dueDate": "" },
-        { "id": 3, "title": "Pride and Prejudice", "author": "Jane Austen", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 4, "title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 5, "title": "Moby-Dick", "author": "Herman Melville", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 6, "title": "War and Peace", "author": "Leo Tolstoy", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 7, "title": "The Catcher in the Rye", "author": "J.D. Salinger", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 8, "title": "The Lord of the Rings", "author": "J.R.R. Tolkien", "genre": "Fantasy", "isLoaned": false, "dueDate": "" },
-        { "id": 9, "title": "The Hobbit", "author": "J.R.R. Tolkien", "genre": "Fantasy", "isLoaned": false, "dueDate": "" },
-        { "id": 10, "title": "Brave New World", "author": "Aldous Huxley", "genre": "Dystopian", "isLoaned": false, "dueDate": "" },
-        { "id": 11, "title": "Jane Eyre", "author": "Charlotte Brontë", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 12, "title": "Wuthering Heights", "author": "Emily Brontë", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 13, "title": "The Odyssey", "author": "Homer", "genre": "Epic", "isLoaned": false, "dueDate": "" },
-        { "id": 14, "title": "Crime and Punishment", "author": "Fyodor Dostoevsky", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 15, "title": "Anna Karenina", "author": "Leo Tolstoy", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 16, "title": "The Brothers Karamazov", "author": "Fyodor Dostoevsky", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 17, "title": "Frankenstein", "author": "Mary Shelley", "genre": "Horror", "isLoaned": false, "dueDate": "" },
-        { "id": 18, "title": "The Iliad", "author": "Homer", "genre": "Epic", "isLoaned": false, "dueDate": "" },
-        { "id": 19, "title": "Great Expectations", "author": "Charles Dickens", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 20, "title": "The Scarlet Letter", "author": "Nathaniel Hawthorne", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 21, "title": "Moby-Dick", "author": "Herman Melville", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 22, "title": "The Picture of Dorian Gray", "author": "Oscar Wilde", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 23, "title": "Dracula", "author": "Bram Stoker", "genre": "Horror", "isLoaned": false, "dueDate": "" },
-        { "id": 24, "title": "The Count of Monte Cristo", "author": "Alexandre Dumas", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 25, "title": "Les Misérables", "author": "Victor Hugo", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 26, "title": "A Tale of Two Cities", "author": "Charles Dickens", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 27, "title": "Don Quixote", "author": "Miguel de Cervantes", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 28, "title": "The Divine Comedy", "author": "Dante Alighieri", "genre": "Epic", "isLoaned": false, "dueDate": "" },
-        { "id": 29, "title": "The Aeneid", "author": "Virgil", "genre": "Epic", "isLoaned": false, "dueDate": "" },
-        { "id": 30, "title": "Madame Bovary", "author": "Gustave Flaubert", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 31, "title": "The Metamorphosis", "author": "Franz Kafka", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 32, "title": "The Trial", "author": "Franz Kafka", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 33, "title": "The Stranger", "author": "Albert Camus", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 34, "title": "Heart of Darkness", "author": "Joseph Conrad", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 35, "title": "The Sun Also Rises", "author": "Ernest Hemingway", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 36, "title": "The Old Man and the Sea", "author": "Ernest Hemingway", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 37, "title": "One Hundred Years of Solitude", "author": "Gabriel García Márquez", "genre": "Magical Realism", "isLoaned": false, "dueDate": "" },
-        { "id": 38, "title": "Love in the Time of Cholera", "author": "Gabriel García Márquez", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 39, "title": "Ulysses", "author": "James Joyce", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 40, "title": "Dubliners", "author": "James Joyce", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 41, "title": "The Catcher in the Rye", "author": "J.D. Salinger", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 42, "title": "Fahrenheit 451", "author": "Ray Bradbury", "genre": "Dystopian", "isLoaned": false, "dueDate": "" },
-        { "id": 43, "title": "The Grapes of Wrath", "author": "John Steinbeck", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 44, "title": "Of Mice and Men", "author": "John Steinbeck", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 45, "title": "East of Eden", "author": "John Steinbeck", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 46, "title": "Gone with the Wind", "author": "Margaret Mitchell", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 47, "title": "Catch-22", "author": "Joseph Heller", "genre": "Satire", "isLoaned": false, "dueDate": "" },
-        { "id": 48, "title": "The Handmaid's Tale", "author": "Margaret Atwood", "genre": "Dystopian", "isLoaned": false, "dueDate": "" },
-        { "id": 49, "title": "Beloved", "author": "Toni Morrison", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 50, "title": "The Road", "author": "Cormac McCarthy", "genre": "Post-Apocalyptic", "isLoaned": false, "dueDate": "" },
-        { "id": 51, "title": "Slaughterhouse-Five", "author": "Kurt Vonnegut", "genre": "Science Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 52, "title": "A Clockwork Orange", "author": "Anthony Burgess", "genre": "Dystopian", "isLoaned": false, "dueDate": "" },
-        { "id": 53, "title": "The Sound and the Fury", "author": "William Faulkner", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 54, "title": "Invisible Man", "author": "Ralph Ellison", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 55, "title": "The Catcher in the Rye", "author": "J.D. Salinger", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 56, "title": "Animal Farm", "author": "George Orwell", "genre": "Dystopian", "isLoaned": false, "dueDate": "" },
-        { "id": 57, "title": "Lord of the Flies", "author": "William Golding", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 58, "title": "The Adventures of Huckleberry Finn", "author": "Mark Twain", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 59, "title": "The Adventures of Tom Sawyer", "author": "Mark Twain", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 60, "title": "The Call of the Wild", "author": "Jack London", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 61, "title": "White Fang", "author": "Jack London", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 62, "title": "The Jungle", "author": "Upton Sinclair", "genre": "Political Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 63, "title": "The Scarlet Letter", "author": "Nathaniel Hawthorne", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 64, "title": "The Grapes of Wrath", "author": "John Steinbeck", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 65, "title": "The Old Man and the Sea", "author": "Ernest Hemingway", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 66, "title": "The Sun Also Rises", "author": "Ernest Hemingway", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 67, "title": "For Whom the Bell Tolls", "author": "Ernest Hemingway", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 68, "title": "One Hundred Years of Solitude", "author": "Gabriel García Márquez", "genre": "Magical Realism", "isLoaned": false, "dueDate": "" },
-        { "id": 69, "title": "Love in the Time of Cholera", "author": "Gabriel García Márquez", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 70, "title": "Ulysses", "author": "James Joyce", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 71, "title": "Dubliners", "author": "James Joyce", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 72, "title": "Moby-Dick", "author": "Herman Melville", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 73, "title": "The Iliad", "author": "Homer", "genre": "Epic", "isLoaned": false, "dueDate": "" },
-        { "id": 74, "title": "The Odyssey", "author": "Homer", "genre": "Epic", "isLoaned": false, "dueDate": "" },
-        { "id": 75, "title": "Pride and Prejudice", "author": "Jane Austen", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 76, "title": "Wuthering Heights", "author": "Emily Brontë", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 77, "title": "Jane Eyre", "author": "Charlotte Brontë", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 78, "title": "The Count of Monte Cristo", "author": "Alexandre Dumas", "genre": "Adventure", "isLoaned": false, "dueDate": "" },
-        { "id": 79, "title": "Les Misérables", "author": "Victor Hugo", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 80, "title": "A Tale of Two Cities", "author": "Charles Dickens", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 81, "title": "Great Expectations", "author": "Charles Dickens", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 82, "title": "David Copperfield", "author": "Charles Dickens", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 83, "title": "Little Women", "author": "Louisa May Alcott", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 84, "title": "Emma", "author": "Jane Austen", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 85, "title": "Sense and Sensibility", "author": "Jane Austen", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 86, "title": "Mansfield Park", "author": "Jane Austen", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 87, "title": "Northanger Abbey", "author": "Jane Austen", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 88, "title": "Persuasion", "author": "Jane Austen", "genre": "Romance", "isLoaned": false, "dueDate": "" },
-        { "id": 89, "title": "Frankenstein", "author": "Mary Shelley", "genre": "Horror", "isLoaned": false, "dueDate": "" },
-        { "id": 90, "title": "Dracula", "author": "Bram Stoker", "genre": "Horror", "isLoaned": false, "dueDate": "" },
-        { "id": 91, "title": "The Picture of Dorian Gray", "author": "Oscar Wilde", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 92, "title": "Heart of Darkness", "author": "Joseph Conrad", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 93, "title": "The Brothers Karamazov", "author": "Fyodor Dostoevsky", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 94, "title": "Crime and Punishment", "author": "Fyodor Dostoevsky", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 95, "title": "Anna Karenina", "author": "Leo Tolstoy", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 96, "title": "War and Peace", "author": "Leo Tolstoy", "genre": "Historical", "isLoaned": false, "dueDate": "" },
-        { "id": 97, "title": "The Metamorphosis", "author": "Franz Kafka", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 98, "title": "The Trial", "author": "Franz Kafka", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 99, "title": "The Stranger", "author": "Albert Camus", "genre": "Fiction", "isLoaned": false, "dueDate": "" },
-        { "id": 100, "title": "The Plague", "author": "Albert Camus", "genre": "Fiction", "isLoaned": false, "dueDate": "" }
-    ]
+        {
+            "author": "Harper Lee",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 1,
+            "isLoaned": false,
+            "title": "To Kill a Mockingbird"
+        },
+        {
+            "author": "George Orwell",
+            "dueDate": "",
+            "genre": "Dystopian",
+            "id": 2,
+            "isLoaned": false,
+            "title": "1984"
+        },
+        {
+            "author": "Jane Austen",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 3,
+            "isLoaned": false,
+            "title": "Pride and Prejudice"
+        },
+        {
+            "author": "F. Scott Fitzgerald",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 4,
+            "isLoaned": false,
+            "title": "The Great Gatsby"
+        },
+        {
+            "author": "Herman Melville",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 5,
+            "isLoaned": false,
+            "title": "Moby-Dick"
+        },
+        {
+            "author": "Leo Tolstoy",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 6,
+            "isLoaned": false,
+            "title": "War and Peace"
+        },
+        {
+            "author": "J.D. Salinger",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 7,
+            "isLoaned": false,
+            "title": "The Catcher in the Rye"
+        },
+        {
+            "author": "J.R.R. Tolkien",
+            "dueDate": "",
+            "genre": "Fantasy",
+            "id": 8,
+            "isLoaned": false,
+            "title": "The Lord of the Rings"
+        },
+        {
+            "author": "J.R.R. Tolkien",
+            "dueDate": "",
+            "genre": "Fantasy",
+            "id": 9,
+            "isLoaned": false,
+            "title": "The Hobbit"
+        },
+        {
+            "author": "Aldous Huxley",
+            "dueDate": "",
+            "genre": "Dystopian",
+            "id": 10,
+            "isLoaned": false,
+            "title": "Brave New World"
+        },
+        {
+            "author": "Charlotte Brontë",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 11,
+            "isLoaned": false,
+            "title": "Jane Eyre"
+        },
+        {
+            "author": "Emily Brontë",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 12,
+            "isLoaned": false,
+            "title": "Wuthering Heights"
+        },
+        {
+            "author": "Homer",
+            "dueDate": "",
+            "genre": "Epic",
+            "id": 13,
+            "isLoaned": false,
+            "title": "The Odyssey"
+        },
+        {
+            "author": "Fyodor Dostoevsky",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 14,
+            "isLoaned": false,
+            "title": "Crime and Punishment"
+        },
+        {
+            "author": "Leo Tolstoy",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 15,
+            "isLoaned": false,
+            "title": "Anna Karenina"
+        },
+        {
+            "author": "Fyodor Dostoevsky",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 16,
+            "isLoaned": false,
+            "title": "The Brothers Karamazov"
+        },
+        {
+            "author": "Mary Shelley",
+            "dueDate": "",
+            "genre": "Horror",
+            "id": 17,
+            "isLoaned": false,
+            "title": "Frankenstein"
+        },
+        {
+            "author": "Homer",
+            "dueDate": "",
+            "genre": "Epic",
+            "id": 18,
+            "isLoaned": false,
+            "title": "The Iliad"
+        },
+        {
+            "author": "Charles Dickens",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 19,
+            "isLoaned": false,
+            "title": "Great Expectations"
+        },
+        {
+            "author": "Nathaniel Hawthorne",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 20,
+            "isLoaned": false,
+            "title": "The Scarlet Letter"
+        },
+        {
+            "author": "Herman Melville",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 21,
+            "isLoaned": false,
+            "title": "Moby-Dick"
+        },
+        {
+            "author": "Oscar Wilde",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 22,
+            "isLoaned": false,
+            "title": "The Picture of Dorian Gray"
+        },
+        {
+            "author": "Bram Stoker",
+            "dueDate": "",
+            "genre": "Horror",
+            "id": 23,
+            "isLoaned": false,
+            "title": "Dracula"
+        },
+        {
+            "author": "Alexandre Dumas",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 24,
+            "isLoaned": false,
+            "title": "The Count of Monte Cristo"
+        },
+        {
+            "author": "Victor Hugo",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 25,
+            "isLoaned": false,
+            "title": "Les Misérables"
+        },
+        {
+            "author": "Charles Dickens",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 26,
+            "isLoaned": false,
+            "title": "A Tale of Two Cities"
+        },
+        {
+            "author": "Miguel de Cervantes",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 27,
+            "isLoaned": false,
+            "title": "Don Quixote"
+        },
+        {
+            "author": "Dante Alighieri",
+            "dueDate": "",
+            "genre": "Epic",
+            "id": 28,
+            "isLoaned": false,
+            "title": "The Divine Comedy"
+        },
+        {
+            "author": "Virgil",
+            "dueDate": "",
+            "genre": "Epic",
+            "id": 29,
+            "isLoaned": false,
+            "title": "The Aeneid"
+        },
+        {
+            "author": "Gustave Flaubert",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 30,
+            "isLoaned": false,
+            "title": "Madame Bovary"
+        },
+        {
+            "author": "Franz Kafka",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 31,
+            "isLoaned": false,
+            "title": "The Metamorphosis"
+        },
+        {
+            "author": "Franz Kafka",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 32,
+            "isLoaned": false,
+            "title": "The Trial"
+        },
+        {
+            "author": "Albert Camus",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 33,
+            "isLoaned": false,
+            "title": "The Stranger"
+        },
+        {
+            "author": "Joseph Conrad",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 34,
+            "isLoaned": false,
+            "title": "Heart of Darkness"
+        },
+        {
+            "author": "Ernest Hemingway",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 35,
+            "isLoaned": false,
+            "title": "The Sun Also Rises"
+        },
+        {
+            "author": "Ernest Hemingway",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 36,
+            "isLoaned": false,
+            "title": "The Old Man and the Sea"
+        },
+        {
+            "author": "Gabriel García Márquez",
+            "dueDate": "",
+            "genre": "Magical Realism",
+            "id": 37,
+            "isLoaned": false,
+            "title": "One Hundred Years of Solitude"
+        },
+        {
+            "author": "Gabriel García Márquez",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 38,
+            "isLoaned": false,
+            "title": "Love in the Time of Cholera"
+        },
+        {
+            "author": "James Joyce",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 39,
+            "isLoaned": false,
+            "title": "Ulysses"
+        },
+        {
+            "author": "James Joyce",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 40,
+            "isLoaned": false,
+            "title": "Dubliners"
+        },
+        {
+            "author": "J.D. Salinger",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 41,
+            "isLoaned": false,
+            "title": "The Catcher in the Rye"
+        },
+        {
+            "author": "Ray Bradbury",
+            "dueDate": "",
+            "genre": "Dystopian",
+            "id": 42,
+            "isLoaned": false,
+            "title": "Fahrenheit 451"
+        },
+        {
+            "author": "John Steinbeck",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 43,
+            "isLoaned": false,
+            "title": "The Grapes of Wrath"
+        },
+        {
+            "author": "John Steinbeck",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 44,
+            "isLoaned": false,
+            "title": "Of Mice and Men"
+        },
+        {
+            "author": "John Steinbeck",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 45,
+            "isLoaned": false,
+            "title": "East of Eden"
+        },
+        {
+            "author": "Margaret Mitchell",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 46,
+            "isLoaned": false,
+            "title": "Gone with the Wind"
+        },
+        {
+            "author": "Joseph Heller",
+            "dueDate": "",
+            "genre": "Satire",
+            "id": 47,
+            "isLoaned": false,
+            "title": "Catch-22"
+        },
+        {
+            "author": "Margaret Atwood",
+            "dueDate": "",
+            "genre": "Dystopian",
+            "id": 48,
+            "isLoaned": false,
+            "title": "The Handmaid's Tale"
+        },
+        {
+            "author": "Toni Morrison",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 49,
+            "isLoaned": false,
+            "title": "Beloved"
+        },
+        {
+            "author": "Cormac McCarthy",
+            "dueDate": "",
+            "genre": "Post-Apocalyptic",
+            "id": 50,
+            "isLoaned": false,
+            "title": "The Road"
+        },
+        {
+            "author": "Kurt Vonnegut",
+            "dueDate": "",
+            "genre": "Science Fiction",
+            "id": 51,
+            "isLoaned": false,
+            "title": "Slaughterhouse-Five"
+        },
+        {
+            "author": "Anthony Burgess",
+            "dueDate": "",
+            "genre": "Dystopian",
+            "id": 52,
+            "isLoaned": false,
+            "title": "A Clockwork Orange"
+        },
+        {
+            "author": "William Faulkner",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 53,
+            "isLoaned": false,
+            "title": "The Sound and the Fury"
+        },
+        {
+            "author": "Ralph Ellison",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 54,
+            "isLoaned": false,
+            "title": "Invisible Man"
+        },
+        {
+            "author": "J.D. Salinger",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 55,
+            "isLoaned": false,
+            "title": "The Catcher in the Rye"
+        },
+        {
+            "author": "George Orwell",
+            "dueDate": "",
+            "genre": "Dystopian",
+            "id": 56,
+            "isLoaned": false,
+            "title": "Animal Farm"
+        },
+        {
+            "author": "William Golding",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 57,
+            "isLoaned": false,
+            "title": "Lord of the Flies"
+        },
+        {
+            "author": "Mark Twain",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 58,
+            "isLoaned": false,
+            "title": "The Adventures of Huckleberry Finn"
+        },
+        {
+            "author": "Mark Twain",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 59,
+            "isLoaned": false,
+            "title": "The Adventures of Tom Sawyer"
+        },
+        {
+            "author": "Jack London",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 60,
+            "isLoaned": false,
+            "title": "The Call of the Wild"
+        },
+        {
+            "author": "Jack London",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 61,
+            "isLoaned": false,
+            "title": "White Fang"
+        },
+        {
+            "author": "Upton Sinclair",
+            "dueDate": "",
+            "genre": "Political Fiction",
+            "id": 62,
+            "isLoaned": false,
+            "title": "The Jungle"
+        },
+        {
+            "author": "Nathaniel Hawthorne",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 63,
+            "isLoaned": false,
+            "title": "The Scarlet Letter"
+        },
+        {
+            "author": "John Steinbeck",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 64,
+            "isLoaned": false,
+            "title": "The Grapes of Wrath"
+        },
+        {
+            "author": "Ernest Hemingway",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 65,
+            "isLoaned": false,
+            "title": "The Old Man and the Sea"
+        },
+        {
+            "author": "Ernest Hemingway",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 66,
+            "isLoaned": false,
+            "title": "The Sun Also Rises"
+        },
+        {
+            "author": "Ernest Hemingway",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 67,
+            "isLoaned": false,
+            "title": "For Whom the Bell Tolls"
+        },
+        {
+            "author": "Gabriel García Márquez",
+            "dueDate": "",
+            "genre": "Magical Realism",
+            "id": 68,
+            "isLoaned": false,
+            "title": "One Hundred Years of Solitude"
+        },
+        {
+            "author": "Gabriel García Márquez",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 69,
+            "isLoaned": false,
+            "title": "Love in the Time of Cholera"
+        },
+        {
+            "author": "James Joyce",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 70,
+            "isLoaned": false,
+            "title": "Ulysses"
+        },
+        {
+            "author": "James Joyce",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 71,
+            "isLoaned": false,
+            "title": "Dubliners"
+        },
+        {
+            "author": "Herman Melville",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 72,
+            "isLoaned": false,
+            "title": "Moby-Dick"
+        },
+        {
+            "author": "Homer",
+            "dueDate": "",
+            "genre": "Epic",
+            "id": 73,
+            "isLoaned": false,
+            "title": "The Iliad"
+        },
+        {
+            "author": "Homer",
+            "dueDate": "",
+            "genre": "Epic",
+            "id": 74,
+            "isLoaned": false,
+            "title": "The Odyssey"
+        },
+        {
+            "author": "Jane Austen",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 75,
+            "isLoaned": false,
+            "title": "Pride and Prejudice"
+        },
+        {
+            "author": "Emily Brontë",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 76,
+            "isLoaned": false,
+            "title": "Wuthering Heights"
+        },
+        {
+            "author": "Charlotte Brontë",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 77,
+            "isLoaned": false,
+            "title": "Jane Eyre"
+        },
+        {
+            "author": "Alexandre Dumas",
+            "dueDate": "",
+            "genre": "Adventure",
+            "id": 78,
+            "isLoaned": false,
+            "title": "The Count of Monte Cristo"
+        },
+        {
+            "author": "Victor Hugo",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 79,
+            "isLoaned": false,
+            "title": "Les Misérables"
+        },
+        {
+            "author": "Charles Dickens",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 80,
+            "isLoaned": false,
+            "title": "A Tale of Two Cities"
+        },
+        {
+            "author": "Charles Dickens",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 81,
+            "isLoaned": false,
+            "title": "Great Expectations"
+        },
+        {
+            "author": "Charles Dickens",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 82,
+            "isLoaned": false,
+            "title": "David Copperfield"
+        },
+        {
+            "author": "Louisa May Alcott",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 83,
+            "isLoaned": false,
+            "title": "Little Women"
+        },
+        {
+            "author": "Jane Austen",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 84,
+            "isLoaned": false,
+            "title": "Emma"
+        },
+        {
+            "author": "Jane Austen",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 85,
+            "isLoaned": false,
+            "title": "Sense and Sensibility"
+        },
+        {
+            "author": "Jane Austen",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 86,
+            "isLoaned": false,
+            "title": "Mansfield Park"
+        },
+        {
+            "author": "Jane Austen",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 87,
+            "isLoaned": false,
+            "title": "Northanger Abbey"
+        },
+        {
+            "author": "Jane Austen",
+            "dueDate": "",
+            "genre": "Romance",
+            "id": 88,
+            "isLoaned": false,
+            "title": "Persuasion"
+        },
+        {
+            "author": "Mary Shelley",
+            "dueDate": "",
+            "genre": "Horror",
+            "id": 89,
+            "isLoaned": false,
+            "title": "Frankenstein"
+        },
+        {
+            "author": "Bram Stoker",
+            "dueDate": "",
+            "genre": "Horror",
+            "id": 90,
+            "isLoaned": false,
+            "title": "Dracula"
+        },
+        {
+            "author": "Oscar Wilde",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 91,
+            "isLoaned": false,
+            "title": "The Picture of Dorian Gray"
+        },
+        {
+            "author": "Joseph Conrad",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 92,
+            "isLoaned": false,
+            "title": "Heart of Darkness"
+        },
+        {
+            "author": "Fyodor Dostoevsky",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 93,
+            "isLoaned": false,
+            "title": "The Brothers Karamazov"
+        },
+        {
+            "author": "Fyodor Dostoevsky",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 94,
+            "isLoaned": false,
+            "title": "Crime and Punishment"
+        },
+        {
+            "author": "Leo Tolstoy",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 95,
+            "isLoaned": false,
+            "title": "Anna Karenina"
+        },
+        {
+            "author": "Leo Tolstoy",
+            "dueDate": "",
+            "genre": "Historical",
+            "id": 96,
+            "isLoaned": false,
+            "title": "War and Peace"
+        },
+        {
+            "author": "Franz Kafka",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 97,
+            "isLoaned": false,
+            "title": "The Metamorphosis"
+        },
+        {
+            "author": "Franz Kafka",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 98,
+            "isLoaned": false,
+            "title": "The Trial"
+        },
+        {
+            "author": "Albert Camus",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 99,
+            "isLoaned": false,
+            "title": "The Stranger"
+        },
+        {
+            "author": "Albert Camus",
+            "dueDate": "",
+            "genre": "Fiction",
+            "id": 100,
+            "isLoaned": false,
+            "title": "The Plague"
+        }
+    ],
+    "users": null
 }

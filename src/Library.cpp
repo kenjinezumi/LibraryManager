@@ -101,8 +101,16 @@ void Library::loadLibraryState(const std::string& booksFilename, const std::stri
 }
 
 void Library::saveLibraryState(const std::string& booksFilename, const std::string& usersFilename) const {
+    // Load existing books data
     nlohmann::json booksJson;
+    std::ifstream booksFile(booksFilename);
+    if (booksFile.is_open()) {
+        booksFile >> booksJson;
+        booksFile.close();
+    }
 
+    // Update books data
+    booksJson["books"].clear();
     for (const auto& book : books.inorder()) {
         nlohmann::json bookJson;
         bookJson["id"] = book.id;
@@ -114,15 +122,24 @@ void Library::saveLibraryState(const std::string& booksFilename, const std::stri
         booksJson["books"].push_back(bookJson);
     }
 
-    std::ofstream booksFile(booksFilename);
-    if (!booksFile.is_open()) {
+    // Save updated books data
+    std::ofstream outBooksFile(booksFilename);
+    if (!outBooksFile.is_open()) {
         throw LibraryException("Could not open file for saving books.");
     }
-    booksFile << booksJson.dump(4);
-    booksFile.close();
+    outBooksFile << booksJson.dump(4);
+    outBooksFile.close();
 
+    // Load existing users data
     nlohmann::json usersJson;
+    std::ifstream usersFile(usersFilename);
+    if (usersFile.is_open()) {
+        usersFile >> usersJson;
+        usersFile.close();
+    }
 
+    // Update users data
+    usersJson["users"].clear();
     for (const auto& [id, user] : users) {
         nlohmann::json userJson;
         userJson["id"] = user.id;
@@ -130,12 +147,13 @@ void Library::saveLibraryState(const std::string& booksFilename, const std::stri
         usersJson["users"].push_back(userJson);
     }
 
-    std::ofstream usersFile(usersFilename);
-    if (!usersFile.is_open()) {
+    // Save updated users data
+    std::ofstream outUsersFile(usersFilename);
+    if (!outUsersFile.is_open()) {
         throw LibraryException("Could not open file for saving users.");
     }
-    usersFile << usersJson.dump(4);
-    usersFile.close();
+    outUsersFile << usersJson.dump(4);
+    outUsersFile.close();
 }
 
 void Library::loadUsersFromFile(const std::string& filename) {
@@ -159,6 +177,15 @@ void Library::loadUsersFromFile(const std::string& filename) {
 void Library::saveUsersToFile(const std::string& filename) const {
     nlohmann::json j;
 
+    // Load existing users data
+    std::ifstream file(filename);
+    if (file.is_open()) {
+        file >> j;
+        file.close();
+    }
+
+    // Update users data
+    j["users"].clear();
     for (const auto& [id, user] : users) {
         nlohmann::json userJson;
         userJson["id"] = user.id;
@@ -166,10 +193,11 @@ void Library::saveUsersToFile(const std::string& filename) const {
         j["users"].push_back(userJson);
     }
 
-    std::ofstream file(filename);
-    if (!file.is_open()) {
+    // Save updated users data
+    std::ofstream outFile(filename);
+    if (!outFile.is_open()) {
         throw LibraryException("Could not open file for saving users.");
     }
-    file << j.dump(4);
-    file.close();
+    outFile << j.dump(4);
+    outFile.close();
 }
