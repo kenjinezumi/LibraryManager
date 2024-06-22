@@ -16,7 +16,7 @@ LibraryManager is a simple library management system that allows you to manage b
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/kenjinezumi/LibraryManager.git
     cd LibraryManager
     ```
 
