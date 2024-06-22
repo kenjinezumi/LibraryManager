@@ -91,8 +91,37 @@ int main(int argc, char* argv[]) {
         } else if (command == "listallbooks") {
             auto books = library.listAllBooks();
             for (const auto& book : books) {
-                std::cout << "ID=" << book.id << ", Title=" << book.title << ", Author=" << book.author << ", Genre=" << book.genre << ", Loaned=" << (book.isLoaned ? "Yes" : "No") << ", Due Date=" << book.dueDate << std::endl;
+                std::cout << "ID=" << book.id << ", Title=" << book.title << ", Author=" << book.author
+                          << ", Genre=" << book.genre << ", Loaned=" << (book.isLoaned ? "Yes" : "No")
+                          << ", Due Date=" << book.dueDate << std::endl;
             }
+        } else if (command == "adduser") {
+            if (argc != 4) {
+                std::cerr << "Usage: " << argv[0] << " adduser <id> <name>" << std::endl;
+                return 1;
+            }
+            int id = std::stoi(argv[2]);
+            std::string name = argv[3];
+            library.addUser(User(id, name));
+        } else if (command == "loanbook") {
+            if (argc != 5) {
+                std::cerr << "Usage: " << argv[0] << " loanbook <bookId> <userId> <dueDate>" << std::endl;
+                return 1;
+            }
+            int bookId = std::stoi(argv[2]);
+            int userId = std::stoi(argv[3]);
+            std::string dueDate = argv[4];
+            library.loanBook(bookId, userId, dueDate);
+        } else if (command == "getbookinfo") {
+            if (argc != 3) {
+                std::cerr << "Usage: " << argv[0] << " getbookinfo <bookId>" << std::endl;
+                return 1;
+            }
+            int bookId = std::stoi(argv[2]);
+            Book book = library.getBookInfo(bookId);
+            std::cout << "ID=" << book.id << ", Title=" << book.title << ", Author=" << book.author
+                      << ", Genre=" << book.genre << ", isLoaned=" << (book.isLoaned ? "Yes" : "No")
+                      << ", dueDate=" << book.dueDate << std::endl;
         } else {
             std::cerr << "Unknown command: " << command << std::endl;
             return 1;

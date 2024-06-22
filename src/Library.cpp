@@ -201,3 +201,11 @@ void Library::saveUsersToFile(const std::string& filename) const {
     outFile << j.dump(4);
     outFile.close();
 }
+
+Book Library::getBookInfo(int bookId) const {
+    auto nodePtr = books.search(Book(bookId, "", "", ""));
+    if (!nodePtr) {
+        throw LibraryException("Book not found.");
+    }
+    return nodePtr->data;
+}

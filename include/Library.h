@@ -25,6 +25,7 @@ public:
     void loanBook(int bookId, int userId, const std::string& dueDate);
     void returnBook(int bookId);
     std::vector<Book> listAllBooks() const;
+    Book getBookInfo(int bookId) const;
     void loadLibraryState(const std::string& booksFilename, const std::string& usersFilename);
     void saveLibraryState(const std::string& booksFilename, const std::string& usersFilename) const;
     void loadUsersFromFile(const std::string& filename);
