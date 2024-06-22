@@ -8,16 +8,18 @@ include_directories(include)
 # Create the main application target
 add_executable(LibraryManager
     src/main.cpp
-    src/Book.cpp
     src/Logger.cpp
     src/Library.cpp
+    src/User.cpp
+    src/Book.cpp
     src/User.cpp)
 
 # Create the tests target
 add_executable(LibraryManagerTests
     tests/tests.cpp
-    src/Book.cpp
     src/Logger.cpp
     src/Library.cpp
-    src/User.cpp)
+    src/User.cpp
+    src/Book.cpp
+    )
 

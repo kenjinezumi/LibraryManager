@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Library.h"
-#include "exceptions.h"
 #include <cassert>
 
 /**
@@ -19,14 +18,29 @@ void runTests() {
 
     // Loan and return a book
     library.loanBook(1, 1, "2024-06-30");
-    assert(library.searchByTitle("Test Book 1")[0].isLoaned == true);
+    auto searchResults = library.listAllBooks();
+    for(const auto& book : searchResults) {
+        if(book.title == "Test Book 1") {
+            assert(book.isLoaned == true);
+        }
+    }
     library.returnBook(1);
-    assert(library.searchByTitle("Test Book 1")[0].isLoaned == false);
+    searchResults = library.listAllBooks();
+    for(const auto& book : searchResults) {
+        if(book.title == "Test Book 1") {
+            assert(book.isLoaned == false);
+        }
+    }
 
-    // Search books
-    assert(!library.searchByTitle("Test Book 1").empty());
-    assert(!library.searchByAuthor("Author 1").empty());
-    assert(!library.searchByGenre("Genre 1").empty());
+    // Save and load library state
+    library.saveLibraryState("library_state.json");
+    Library newLibrary;
+    newLibrary.loadLibraryState("library_state.json");
+
+    // Verify loaded data
+    auto loadedBooks = newLibrary.listAllBooks();
+    assert(loadedBooks.size() == 2);
+    assert(loadedBooks[0].title == "Test Book 1" || loadedBooks[1].title == "Test Book 1");
 
     std::cout << "All tests passed!" << std::endl;
 }

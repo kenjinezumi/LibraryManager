@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kenjitsuchiya/Desktop/LibraryManager
+CMAKE_SOURCE_DIR = /Users/kenjitsuchiya/desktop/LibraryManager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kenjitsuchiya/Desktop/LibraryManager/build
+CMAKE_BINARY_DIR = /Users/kenjitsuchiya/desktop/LibraryManager/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LibraryManager.dir/depend.make
@@ -70,110 +70,94 @@ include CMakeFiles/LibraryManager.dir/progress.make
 include CMakeFiles/LibraryManager.dir/flags.make
 
 CMakeFiles/LibraryManager.dir/src/main.cpp.o: CMakeFiles/LibraryManager.dir/flags.make
-CMakeFiles/LibraryManager.dir/src/main.cpp.o: /Users/kenjitsuchiya/Desktop/LibraryManager/src/main.cpp
+CMakeFiles/LibraryManager.dir/src/main.cpp.o: /Users/kenjitsuchiya/desktop/LibraryManager/src/main.cpp
 CMakeFiles/LibraryManager.dir/src/main.cpp.o: CMakeFiles/LibraryManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LibraryManager.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/main.cpp.o -MF CMakeFiles/LibraryManager.dir/src/main.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/main.cpp.o -c /Users/kenjitsuchiya/Desktop/LibraryManager/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LibraryManager.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/main.cpp.o -MF CMakeFiles/LibraryManager.dir/src/main.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/main.cpp.o -c /Users/kenjitsuchiya/desktop/LibraryManager/src/main.cpp
 
 CMakeFiles/LibraryManager.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LibraryManager.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/Desktop/LibraryManager/src/main.cpp > CMakeFiles/LibraryManager.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/desktop/LibraryManager/src/main.cpp > CMakeFiles/LibraryManager.dir/src/main.cpp.i
 
 CMakeFiles/LibraryManager.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LibraryManager.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/Desktop/LibraryManager/src/main.cpp -o CMakeFiles/LibraryManager.dir/src/main.cpp.s
-
-CMakeFiles/LibraryManager.dir/src/Book.cpp.o: CMakeFiles/LibraryManager.dir/flags.make
-CMakeFiles/LibraryManager.dir/src/Book.cpp.o: /Users/kenjitsuchiya/Desktop/LibraryManager/src/Book.cpp
-CMakeFiles/LibraryManager.dir/src/Book.cpp.o: CMakeFiles/LibraryManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LibraryManager.dir/src/Book.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/Book.cpp.o -MF CMakeFiles/LibraryManager.dir/src/Book.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/Book.cpp.o -c /Users/kenjitsuchiya/Desktop/LibraryManager/src/Book.cpp
-
-CMakeFiles/LibraryManager.dir/src/Book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LibraryManager.dir/src/Book.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/Desktop/LibraryManager/src/Book.cpp > CMakeFiles/LibraryManager.dir/src/Book.cpp.i
-
-CMakeFiles/LibraryManager.dir/src/Book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LibraryManager.dir/src/Book.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/Desktop/LibraryManager/src/Book.cpp -o CMakeFiles/LibraryManager.dir/src/Book.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/desktop/LibraryManager/src/main.cpp -o CMakeFiles/LibraryManager.dir/src/main.cpp.s
 
 CMakeFiles/LibraryManager.dir/src/Logger.cpp.o: CMakeFiles/LibraryManager.dir/flags.make
-CMakeFiles/LibraryManager.dir/src/Logger.cpp.o: /Users/kenjitsuchiya/Desktop/LibraryManager/src/Logger.cpp
+CMakeFiles/LibraryManager.dir/src/Logger.cpp.o: /Users/kenjitsuchiya/desktop/LibraryManager/src/Logger.cpp
 CMakeFiles/LibraryManager.dir/src/Logger.cpp.o: CMakeFiles/LibraryManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LibraryManager.dir/src/Logger.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/Logger.cpp.o -MF CMakeFiles/LibraryManager.dir/src/Logger.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/Logger.cpp.o -c /Users/kenjitsuchiya/Desktop/LibraryManager/src/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LibraryManager.dir/src/Logger.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/Logger.cpp.o -MF CMakeFiles/LibraryManager.dir/src/Logger.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/Logger.cpp.o -c /Users/kenjitsuchiya/desktop/LibraryManager/src/Logger.cpp
 
 CMakeFiles/LibraryManager.dir/src/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LibraryManager.dir/src/Logger.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/Desktop/LibraryManager/src/Logger.cpp > CMakeFiles/LibraryManager.dir/src/Logger.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/desktop/LibraryManager/src/Logger.cpp > CMakeFiles/LibraryManager.dir/src/Logger.cpp.i
 
 CMakeFiles/LibraryManager.dir/src/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LibraryManager.dir/src/Logger.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/Desktop/LibraryManager/src/Logger.cpp -o CMakeFiles/LibraryManager.dir/src/Logger.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/desktop/LibraryManager/src/Logger.cpp -o CMakeFiles/LibraryManager.dir/src/Logger.cpp.s
 
 CMakeFiles/LibraryManager.dir/src/Library.cpp.o: CMakeFiles/LibraryManager.dir/flags.make
-CMakeFiles/LibraryManager.dir/src/Library.cpp.o: /Users/kenjitsuchiya/Desktop/LibraryManager/src/Library.cpp
+CMakeFiles/LibraryManager.dir/src/Library.cpp.o: /Users/kenjitsuchiya/desktop/LibraryManager/src/Library.cpp
 CMakeFiles/LibraryManager.dir/src/Library.cpp.o: CMakeFiles/LibraryManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LibraryManager.dir/src/Library.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/Library.cpp.o -MF CMakeFiles/LibraryManager.dir/src/Library.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/Library.cpp.o -c /Users/kenjitsuchiya/Desktop/LibraryManager/src/Library.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LibraryManager.dir/src/Library.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/Library.cpp.o -MF CMakeFiles/LibraryManager.dir/src/Library.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/Library.cpp.o -c /Users/kenjitsuchiya/desktop/LibraryManager/src/Library.cpp
 
 CMakeFiles/LibraryManager.dir/src/Library.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LibraryManager.dir/src/Library.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/Desktop/LibraryManager/src/Library.cpp > CMakeFiles/LibraryManager.dir/src/Library.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/desktop/LibraryManager/src/Library.cpp > CMakeFiles/LibraryManager.dir/src/Library.cpp.i
 
 CMakeFiles/LibraryManager.dir/src/Library.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LibraryManager.dir/src/Library.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/Desktop/LibraryManager/src/Library.cpp -o CMakeFiles/LibraryManager.dir/src/Library.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/desktop/LibraryManager/src/Library.cpp -o CMakeFiles/LibraryManager.dir/src/Library.cpp.s
 
 CMakeFiles/LibraryManager.dir/src/User.cpp.o: CMakeFiles/LibraryManager.dir/flags.make
-CMakeFiles/LibraryManager.dir/src/User.cpp.o: /Users/kenjitsuchiya/Desktop/LibraryManager/src/User.cpp
+CMakeFiles/LibraryManager.dir/src/User.cpp.o: /Users/kenjitsuchiya/desktop/LibraryManager/src/User.cpp
 CMakeFiles/LibraryManager.dir/src/User.cpp.o: CMakeFiles/LibraryManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LibraryManager.dir/src/User.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/User.cpp.o -MF CMakeFiles/LibraryManager.dir/src/User.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/User.cpp.o -c /Users/kenjitsuchiya/Desktop/LibraryManager/src/User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LibraryManager.dir/src/User.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/User.cpp.o -MF CMakeFiles/LibraryManager.dir/src/User.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/User.cpp.o -c /Users/kenjitsuchiya/desktop/LibraryManager/src/User.cpp
 
 CMakeFiles/LibraryManager.dir/src/User.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LibraryManager.dir/src/User.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/Desktop/LibraryManager/src/User.cpp > CMakeFiles/LibraryManager.dir/src/User.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/desktop/LibraryManager/src/User.cpp > CMakeFiles/LibraryManager.dir/src/User.cpp.i
 
 CMakeFiles/LibraryManager.dir/src/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LibraryManager.dir/src/User.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/Desktop/LibraryManager/src/User.cpp -o CMakeFiles/LibraryManager.dir/src/User.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/desktop/LibraryManager/src/User.cpp -o CMakeFiles/LibraryManager.dir/src/User.cpp.s
 
-CMakeFiles/LibraryManager.dir/tests/tests.cpp.o: CMakeFiles/LibraryManager.dir/flags.make
-CMakeFiles/LibraryManager.dir/tests/tests.cpp.o: /Users/kenjitsuchiya/Desktop/LibraryManager/tests/tests.cpp
-CMakeFiles/LibraryManager.dir/tests/tests.cpp.o: CMakeFiles/LibraryManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LibraryManager.dir/tests/tests.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/tests/tests.cpp.o -MF CMakeFiles/LibraryManager.dir/tests/tests.cpp.o.d -o CMakeFiles/LibraryManager.dir/tests/tests.cpp.o -c /Users/kenjitsuchiya/Desktop/LibraryManager/tests/tests.cpp
+CMakeFiles/LibraryManager.dir/src/Book.cpp.o: CMakeFiles/LibraryManager.dir/flags.make
+CMakeFiles/LibraryManager.dir/src/Book.cpp.o: /Users/kenjitsuchiya/desktop/LibraryManager/src/Book.cpp
+CMakeFiles/LibraryManager.dir/src/Book.cpp.o: CMakeFiles/LibraryManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LibraryManager.dir/src/Book.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LibraryManager.dir/src/Book.cpp.o -MF CMakeFiles/LibraryManager.dir/src/Book.cpp.o.d -o CMakeFiles/LibraryManager.dir/src/Book.cpp.o -c /Users/kenjitsuchiya/desktop/LibraryManager/src/Book.cpp
 
-CMakeFiles/LibraryManager.dir/tests/tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LibraryManager.dir/tests/tests.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/Desktop/LibraryManager/tests/tests.cpp > CMakeFiles/LibraryManager.dir/tests/tests.cpp.i
+CMakeFiles/LibraryManager.dir/src/Book.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LibraryManager.dir/src/Book.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenjitsuchiya/desktop/LibraryManager/src/Book.cpp > CMakeFiles/LibraryManager.dir/src/Book.cpp.i
 
-CMakeFiles/LibraryManager.dir/tests/tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LibraryManager.dir/tests/tests.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/Desktop/LibraryManager/tests/tests.cpp -o CMakeFiles/LibraryManager.dir/tests/tests.cpp.s
+CMakeFiles/LibraryManager.dir/src/Book.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LibraryManager.dir/src/Book.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenjitsuchiya/desktop/LibraryManager/src/Book.cpp -o CMakeFiles/LibraryManager.dir/src/Book.cpp.s
 
 # Object files for target LibraryManager
 LibraryManager_OBJECTS = \
 "CMakeFiles/LibraryManager.dir/src/main.cpp.o" \
-"CMakeFiles/LibraryManager.dir/src/Book.cpp.o" \
 "CMakeFiles/LibraryManager.dir/src/Logger.cpp.o" \
 "CMakeFiles/LibraryManager.dir/src/Library.cpp.o" \
 "CMakeFiles/LibraryManager.dir/src/User.cpp.o" \
-"CMakeFiles/LibraryManager.dir/tests/tests.cpp.o"
+"CMakeFiles/LibraryManager.dir/src/Book.cpp.o"
 
 # External object files for target LibraryManager
 LibraryManager_EXTERNAL_OBJECTS =
 
 LibraryManager: CMakeFiles/LibraryManager.dir/src/main.cpp.o
-LibraryManager: CMakeFiles/LibraryManager.dir/src/Book.cpp.o
 LibraryManager: CMakeFiles/LibraryManager.dir/src/Logger.cpp.o
 LibraryManager: CMakeFiles/LibraryManager.dir/src/Library.cpp.o
 LibraryManager: CMakeFiles/LibraryManager.dir/src/User.cpp.o
-LibraryManager: CMakeFiles/LibraryManager.dir/tests/tests.cpp.o
+LibraryManager: CMakeFiles/LibraryManager.dir/src/Book.cpp.o
 LibraryManager: CMakeFiles/LibraryManager.dir/build.make
 LibraryManager: CMakeFiles/LibraryManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable LibraryManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable LibraryManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LibraryManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -185,6 +169,6 @@ CMakeFiles/LibraryManager.dir/clean:
 .PHONY : CMakeFiles/LibraryManager.dir/clean
 
 CMakeFiles/LibraryManager.dir/depend:
-	cd /Users/kenjitsuchiya/Desktop/LibraryManager/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kenjitsuchiya/Desktop/LibraryManager /Users/kenjitsuchiya/Desktop/LibraryManager /Users/kenjitsuchiya/Desktop/LibraryManager/build /Users/kenjitsuchiya/Desktop/LibraryManager/build /Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles/LibraryManager.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/kenjitsuchiya/desktop/LibraryManager/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kenjitsuchiya/desktop/LibraryManager /Users/kenjitsuchiya/desktop/LibraryManager /Users/kenjitsuchiya/desktop/LibraryManager/build /Users/kenjitsuchiya/desktop/LibraryManager/build /Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles/LibraryManager.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/LibraryManager.dir/depend
 

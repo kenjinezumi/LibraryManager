@@ -54,16 +54,16 @@ RM = /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kenjitsuchiya/Desktop/LibraryManager
+CMAKE_SOURCE_DIR = /Users/kenjitsuchiya/desktop/LibraryManager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kenjitsuchiya/Desktop/LibraryManager/build
+CMAKE_BINARY_DIR = /Users/kenjitsuchiya/desktop/LibraryManager/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LibraryManagerPro.dir/all
+all: CMakeFiles/LibraryManager.dir/all
 all: CMakeFiles/LibraryManagerTests.dir/all
 .PHONY : all
 
@@ -72,35 +72,35 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/LibraryManagerPro.dir/clean
+clean: CMakeFiles/LibraryManager.dir/clean
 clean: CMakeFiles/LibraryManagerTests.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LibraryManagerPro.dir
+# Target rules for target CMakeFiles/LibraryManager.dir
 
 # All Build rule for target.
-CMakeFiles/LibraryManagerPro.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target LibraryManagerPro"
-.PHONY : CMakeFiles/LibraryManagerPro.dir/all
+CMakeFiles/LibraryManager.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target LibraryManager"
+.PHONY : CMakeFiles/LibraryManager.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LibraryManagerPro.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LibraryManagerPro.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles 0
-.PHONY : CMakeFiles/LibraryManagerPro.dir/rule
+CMakeFiles/LibraryManager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LibraryManager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles 0
+.PHONY : CMakeFiles/LibraryManager.dir/rule
 
 # Convenience name for target.
-LibraryManagerPro: CMakeFiles/LibraryManagerPro.dir/rule
-.PHONY : LibraryManagerPro
+LibraryManager: CMakeFiles/LibraryManager.dir/rule
+.PHONY : LibraryManager
 
 # clean rule for target.
-CMakeFiles/LibraryManagerPro.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/clean
-.PHONY : CMakeFiles/LibraryManagerPro.dir/clean
+CMakeFiles/LibraryManager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/clean
+.PHONY : CMakeFiles/LibraryManager.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/LibraryManagerTests.dir
@@ -109,14 +109,14 @@ CMakeFiles/LibraryManagerPro.dir/clean:
 CMakeFiles/LibraryManagerTests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target LibraryManagerTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target LibraryManagerTests"
 .PHONY : CMakeFiles/LibraryManagerTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LibraryManagerTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LibraryManagerTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles 0
 .PHONY : CMakeFiles/LibraryManagerTests.dir/rule
 
 # Convenience name for target.

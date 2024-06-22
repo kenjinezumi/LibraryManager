@@ -2,24 +2,30 @@
 #define USER_H
 
 #include <string>
+#include <nlohmann/json.hpp>
 
-/**
- * @class User
- * @brief Represents a user of the library.
- */
 class User {
 public:
     int id;
     std::string name;
 
-    /**
-     * @brief Constructs a new User object.
-     * @param userId The unique identifier for the user.
-     * @param userName The name of the user.
-     */
-    User(int userId, const std::string& userName);
+    User() : id(0), name("") {}
+    User(int userId, const std::string& userName) : id(userId), name(userName) {}
 
-    User() = default;  // Default constructor
+    bool operator==(const User& other) const {
+        return id == other.id;
+    }
+
+    bool operator<(const User& other) const {
+        return id < other.id;
+    }
+
+    bool operator>(const User& other) const {
+        return id > other.id;
+    }
 };
+
+void to_json(nlohmann::json& j, const User& u);
+void from_json(const nlohmann::json& j, User& u);
 
 #endif // USER_H

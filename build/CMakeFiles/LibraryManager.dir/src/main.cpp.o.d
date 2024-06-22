@@ -1,5 +1,5 @@
 CMakeFiles/LibraryManager.dir/src/main.cpp.o: \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/src/main.cpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -420,70 +420,69 @@ CMakeFiles/LibraryManager.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iomanip \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/Library.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/unordered_map \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/json.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/adl_serializer.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/abi_macros.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/conversions/from_json.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/forward_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__hash_table \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/Book.h \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/User.h \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/Logger.h \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/AVLTree.h \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/json.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/adl_serializer.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/abi_macros.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/conversions/from_json.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/forward_list \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/valarray \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/exceptions.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/value_t.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/macro_scope.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/detected.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/void_t.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/thirdparty/hedley/hedley.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/string_escape.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/input/position_t.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/cpp_future.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/type_traits.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/iterators/iterator_traits.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/call_std/begin.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/call_std/end.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/json_fwd.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/string_concat.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/identity_tag.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/std_fs.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/conversions/to_json.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/iterators/iteration_proxy.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/byte_container_with_subtype.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/hash.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/input/binary_reader.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/input/input_adapters.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/exceptions.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/value_t.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/macro_scope.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/detected.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/void_t.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/string_escape.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/input/position_t.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/cpp_future.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/type_traits.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/call_std/end.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/json_fwd.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/string_concat.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/identity_tag.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/std_fs.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/conversions/to_json.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/byte_container_with_subtype.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/hash.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/input/binary_reader.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/input/input_adapters.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/input/json_sax.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/input/lexer.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/input/json_sax.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/input/lexer.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/clocale \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/meta/is_sax.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/input/parser.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/iterators/internal_iterator.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/iterators/primitive_iterator.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/iterators/iter_impl.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/json_custom_base_class.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/json_pointer.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/json_ref.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/output/binary_writer.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/output/output_adapters.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/output/serializer.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/conversions/to_chars.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/ordered_map.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/detail/macro_unscope.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/exceptions.h
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/meta/is_sax.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/input/parser.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/json_custom_base_class.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/json_pointer.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/json_ref.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/output/binary_writer.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/output/output_adapters.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/output/serializer.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/conversions/to_chars.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/ordered_map.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/detail/macro_unscope.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/Library.h \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/Book.h \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/User.h \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/BST.h \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/Logger.h

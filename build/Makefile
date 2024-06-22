@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kenjitsuchiya/Desktop/LibraryManager
+CMAKE_SOURCE_DIR = /Users/kenjitsuchiya/desktop/LibraryManager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kenjitsuchiya/Desktop/LibraryManager/build
+CMAKE_BINARY_DIR = /Users/kenjitsuchiya/desktop/LibraryManager/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles /Users/kenjitsuchiya/Desktop/LibraryManager/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles /Users/kenjitsuchiya/desktop/LibraryManager/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LibraryManagerPro
+# Target rules for targets named LibraryManager
 
 # Build rule for target.
-LibraryManagerPro: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LibraryManagerPro
-.PHONY : LibraryManagerPro
+LibraryManager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LibraryManager
+.PHONY : LibraryManager
 
 # fast build rule for target.
-LibraryManagerPro/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/build
-.PHONY : LibraryManagerPro/fast
+LibraryManager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/build
+.PHONY : LibraryManager/fast
 
 #=============================================================================
 # Target rules for targets named LibraryManagerTests
@@ -147,7 +147,7 @@ src/Book.o: src/Book.cpp.o
 
 # target to build an object file
 src/Book.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Book.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Book.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Book.cpp.o
 .PHONY : src/Book.cpp.o
 
@@ -156,7 +156,7 @@ src/Book.i: src/Book.cpp.i
 
 # target to preprocess a source file
 src/Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Book.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Book.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Book.cpp.i
 .PHONY : src/Book.cpp.i
 
@@ -165,7 +165,7 @@ src/Book.s: src/Book.cpp.s
 
 # target to generate assembly for a file
 src/Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Book.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Book.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Book.cpp.s
 .PHONY : src/Book.cpp.s
 
@@ -174,7 +174,7 @@ src/Library.o: src/Library.cpp.o
 
 # target to build an object file
 src/Library.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Library.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Library.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Library.cpp.o
 .PHONY : src/Library.cpp.o
 
@@ -183,7 +183,7 @@ src/Library.i: src/Library.cpp.i
 
 # target to preprocess a source file
 src/Library.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Library.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Library.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Library.cpp.i
 .PHONY : src/Library.cpp.i
 
@@ -192,7 +192,7 @@ src/Library.s: src/Library.cpp.s
 
 # target to generate assembly for a file
 src/Library.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Library.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Library.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Library.cpp.s
 .PHONY : src/Library.cpp.s
 
@@ -201,7 +201,7 @@ src/Logger.o: src/Logger.cpp.o
 
 # target to build an object file
 src/Logger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Logger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Logger.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Logger.cpp.o
 .PHONY : src/Logger.cpp.o
 
@@ -210,7 +210,7 @@ src/Logger.i: src/Logger.cpp.i
 
 # target to preprocess a source file
 src/Logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Logger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Logger.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Logger.cpp.i
 .PHONY : src/Logger.cpp.i
 
@@ -219,7 +219,7 @@ src/Logger.s: src/Logger.cpp.s
 
 # target to generate assembly for a file
 src/Logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/Logger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/Logger.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/Logger.cpp.s
 .PHONY : src/Logger.cpp.s
 
@@ -228,7 +228,7 @@ src/User.o: src/User.cpp.o
 
 # target to build an object file
 src/User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/User.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/User.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/User.cpp.o
 .PHONY : src/User.cpp.o
 
@@ -237,7 +237,7 @@ src/User.i: src/User.cpp.i
 
 # target to preprocess a source file
 src/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/User.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/User.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/User.cpp.i
 .PHONY : src/User.cpp.i
 
@@ -246,7 +246,7 @@ src/User.s: src/User.cpp.s
 
 # target to generate assembly for a file
 src/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/User.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/User.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerTests.dir/build.make CMakeFiles/LibraryManagerTests.dir/src/User.cpp.s
 .PHONY : src/User.cpp.s
 
@@ -255,7 +255,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -263,7 +263,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -271,7 +271,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManagerPro.dir/build.make CMakeFiles/LibraryManagerPro.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibraryManager.dir/build.make CMakeFiles/LibraryManager.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 tests/tests.o: tests/tests.cpp.o
@@ -306,7 +306,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LibraryManagerPro"
+	@echo "... LibraryManager"
 	@echo "... LibraryManagerTests"
 	@echo "... src/Book.o"
 	@echo "... src/Book.i"

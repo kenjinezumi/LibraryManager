@@ -9,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/LibraryManager.dir/src/User.cpp.o.d"
   "CMakeFiles/LibraryManager.dir/src/main.cpp.o"
   "CMakeFiles/LibraryManager.dir/src/main.cpp.o.d"
-  "CMakeFiles/LibraryManager.dir/tests/tests.cpp.o"
-  "CMakeFiles/LibraryManager.dir/tests/tests.cpp.o.d"
   "LibraryManager"
   "LibraryManager.pdb"
 )

@@ -1,4 +1,4 @@
-/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles/LibraryManagerPro.dir
-/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles/LibraryManagerTests.dir
-/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles/edit_cache.dir
-/Users/kenjitsuchiya/Desktop/LibraryManager/build/CMakeFiles/rebuild_cache.dir
+/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles/LibraryManager.dir
+/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles/LibraryManagerTests.dir
+/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles/edit_cache.dir
+/Users/kenjitsuchiya/desktop/LibraryManager/build/CMakeFiles/rebuild_cache.dir

@@ -1,114 +1,85 @@
 #include <iostream>
 #include <fstream>
+#include <nlohmann/json.hpp>
 #include "Library.h"
-#include "nlohmann/json.hpp"
-#include "exceptions.h"
+#include "Logger.h"
 
-using json = nlohmann::json;
-
-/**
- * @brief Loads books from a JSON file and adds them to the library.
- * @param library The library to add books to.
- * @param filename The JSON file containing the book data.
- */
 void loadBooksFromFile(Library& library, const std::string& filename) {
-    std::ifstream file(filename);
-    if (!file) {
-        throw std::runtime_error("Unable to open file: " + filename);
-    }
-
-    json j;
-    file >> j;
-
-    for (const auto& item : j) {
-        Book book(item["id"], item["title"], item["author"], item["genre"]);
-        library.addBook(book);
-    }
+    library.loadLibraryState(filename);
 }
 
-void showUsage() {
-    std::cout << "Usage: LibraryManagerPro <command> [<args>]\n";
-    std::cout << "Commands:\n";
-    std::cout << "  loadbooks <file>           Load books from a JSON file\n";
-    std::cout << "  adduser <id> <name>        Add a user\n";
-    std::cout << "  loanbook <bookId> <userId> <dueDate>  Loan a book to a user\n";
-    std::cout << "  returnbook <bookId>        Return a loaned book\n";
-    std::cout << "  search <field> <value>     Search books by title, author, or genre\n";
+void saveBooksToFile(const Library& library, const std::string& filename) {
+    library.saveLibraryState(filename);
+}
+
+void loadUsersFromFile(Library& library, const std::string& filename) {
+    library.loadUsersFromFile(filename);
+}
+
+void saveUsersToFile(const Library& library, const std::string& filename) {
+    library.saveUsersToFile(filename);
 }
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        showUsage();
+        std::cerr << "Usage: " << argv[0] << " <command> [arguments]" << std::endl;
         return 1;
     }
 
     Library library;
+
+    // Automatically load state from files
+    loadBooksFromFile(library, "../data/books.json");
+    loadUsersFromFile(library, "../data/users.json");
 
     std::string command = argv[1];
 
     try {
         if (command == "loadbooks") {
             if (argc != 3) {
-                showUsage();
+                std::cerr << "Usage: " << argv[0] << " loadbooks <filename>" << std::endl;
                 return 1;
             }
-            loadBooksFromFile(library, argv[2]);
-        } else if (command == "adduser") {
-            if (argc != 4) {
-                showUsage();
-                return 1;
-            }
-            int userId = std::stoi(argv[2]);
-            std::string userName = argv[3];
-            library.addUser(User(userId, userName));
-        } else if (command == "loanbook") {
-            if (argc != 5) {
-                showUsage();
-                return 1;
-            }
-            int bookId = std::stoi(argv[2]);
-            int userId = std::stoi(argv[3]);
-            std::string dueDate = argv[4];
-            library.loanBook(bookId, userId, dueDate);
-        } else if (command == "returnbook") {
+            std::string filename = argv[2];
+            loadBooksFromFile(library, filename);
+        } else if (command == "savebooks") {
             if (argc != 3) {
-                showUsage();
+                std::cerr << "Usage: " << argv[0] << " savebooks <filename>" << std::endl;
                 return 1;
             }
-            int bookId = std::stoi(argv[2]);
-            library.returnBook(bookId);
-        } else if (command == "search") {
-            if (argc != 4) {
-                showUsage();
+            std::string filename = argv[2];
+            saveBooksToFile(library, filename);
+        } else if (command == "loadusers") {
+            if (argc != 3) {
+                std::cerr << "Usage: " << argv[0] << " loadusers <filename>" << std::endl;
                 return 1;
             }
-            std::string field = argv[2];
-            std::string value = argv[3];
-            std::vector<Book> results;
-
-            if (field == "title") {
-                results = library.searchByTitle(value);
-            } else if (field == "author") {
-                results = library.searchByAuthor(value);
-            } else if (field == "genre") {
-                results = library.searchByGenre(value);
-            } else {
-                std::cerr << "Unknown search field: " << field << std::endl;
+            std::string filename = argv[2];
+            loadUsersFromFile(library, filename);
+        } else if (command == "saveusers") {
+            if (argc != 3) {
+                std::cerr << "Usage: " << argv[0] << " saveusers <filename>" << std::endl;
                 return 1;
             }
-
-            for (const auto& book : results) {
-                std::cout << "Found book: " << book.title << " by " << book.author << " (Genre: " << book.genre << ")\n";
+            std::string filename = argv[2];
+            saveUsersToFile(library, filename);
+        } else if (command == "listallbooks") {
+            auto books = library.listAllBooks();
+            for (const auto& book : books) {
+                std::cout << "ID=" << book.id << ", Title=" << book.title << ", Author=" << book.author << ", Genre=" << book.genre << std::endl;
             }
         } else {
-            showUsage();
+            std::cerr << "Unknown command: " << command << std::endl;
             return 1;
         }
     } catch (const LibraryException& e) {
         std::cerr << "Library error: " << e.what() << std::endl;
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
+        return 1;
     }
+
+    // Automatically save state to files
+    saveBooksToFile(library, "../data/books.json");
+    saveUsersToFile(library, "../data/users.json");
 
     return 0;
 }

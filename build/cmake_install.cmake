@@ -1,4 +1,4 @@
-# Install script for directory: /Users/kenjitsuchiya/Desktop/LibraryManager
+# Install script for directory: /Users/kenjitsuchiya/desktop/LibraryManager
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/kenjitsuchiya/Desktop/LibraryManager/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/kenjitsuchiya/desktop/LibraryManager/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

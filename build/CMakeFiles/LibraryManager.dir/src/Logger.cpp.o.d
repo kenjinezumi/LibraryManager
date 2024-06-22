@@ -1,6 +1,6 @@
 CMakeFiles/LibraryManager.dir/src/Logger.cpp.o: \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/src/Logger.cpp \
-  /Users/kenjitsuchiya/Desktop/LibraryManager/include/Logger.h \
+  /Users/kenjitsuchiya/desktop/LibraryManager/src/Logger.cpp \
+  /Users/kenjitsuchiya/desktop/LibraryManager/include/Logger.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \

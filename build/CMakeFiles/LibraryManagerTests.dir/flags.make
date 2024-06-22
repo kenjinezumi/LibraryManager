@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/kenjitsuchiya/Desktop/LibraryManager/include
+CXX_INCLUDES = -I/Users/kenjitsuchiya/desktop/LibraryManager/include
 
 CXX_FLAGSx86_64 = -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
 
