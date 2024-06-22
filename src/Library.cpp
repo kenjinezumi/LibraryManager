@@ -70,14 +70,12 @@ void Library::loadLibraryState(const std::string& filename) {
     file >> j;
 
     for (const auto& item : j["books"]) {
-        Book book;
-        from_json(item, book);
+        Book book = item.get<Book>();
         books.insert(book);
     }
 
     for (const auto& item : j["users"]) {
-        User user;
-        from_json(item, user);
+        User user = item.get<User>();
         users[user.id] = user;
     }
 
@@ -120,8 +118,7 @@ void Library::loadUsersFromFile(const std::string& filename) {
     file >> j;
 
     for (const auto& item : j) {
-        User user;
-        from_json(item, user);
+        User user = item.get<User>();
         users[user.id] = user;
     }
 }
