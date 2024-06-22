@@ -61,6 +61,7 @@ std::vector<Book> Library::listAllBooks() const {
 }
 
 void Library::loadLibraryState(const std::string& booksFilename, const std::string& usersFilename) {
+    // Load books
     std::ifstream booksFile(booksFilename);
     if (!booksFile.is_open()) {
         throw LibraryException("Could not open file for loading books.");
@@ -68,6 +69,7 @@ void Library::loadLibraryState(const std::string& booksFilename, const std::stri
 
     nlohmann::json booksJson;
     booksFile >> booksJson;
+    booksFile.close();
 
     for (const auto& item : booksJson["books"]) {
         Book book;
@@ -80,6 +82,7 @@ void Library::loadLibraryState(const std::string& booksFilename, const std::stri
         books.insert(book);
     }
 
+    // Load users
     std::ifstream usersFile(usersFilename);
     if (!usersFile.is_open()) {
         throw LibraryException("Could not open file for loading users.");
@@ -87,6 +90,7 @@ void Library::loadLibraryState(const std::string& booksFilename, const std::stri
 
     nlohmann::json usersJson;
     usersFile >> usersJson;
+    usersFile.close();
 
     for (const auto& item : usersJson["users"]) {
         User user;
@@ -115,6 +119,7 @@ void Library::saveLibraryState(const std::string& booksFilename, const std::stri
         throw LibraryException("Could not open file for saving books.");
     }
     booksFile << booksJson.dump(4);
+    booksFile.close();
 
     nlohmann::json usersJson;
 
@@ -130,6 +135,7 @@ void Library::saveLibraryState(const std::string& booksFilename, const std::stri
         throw LibraryException("Could not open file for saving users.");
     }
     usersFile << usersJson.dump(4);
+    usersFile.close();
 }
 
 void Library::loadUsersFromFile(const std::string& filename) {
@@ -140,6 +146,7 @@ void Library::loadUsersFromFile(const std::string& filename) {
 
     nlohmann::json j;
     file >> j;
+    file.close();
 
     for (const auto& item : j["users"]) {
         User user;
@@ -164,4 +171,5 @@ void Library::saveUsersToFile(const std::string& filename) const {
         throw LibraryException("Could not open file for saving users.");
     }
     file << j.dump(4);
+    file.close();
 }
